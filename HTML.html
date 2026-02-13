@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="css.css">
+    <!-- Importing a cute font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Cute Floating Sticker -->
+        <img class="sticker-float" src="https://media.tenor.com/V6jW0pYj6xUAAAAi/cute-cat-love.gif" alt="Cute Sticker">
+
+        <!-- State 1: The Question -->
+        <div id="question-container">
+            <!-- You can replace this GIF with a photo of you two or a different cute GIF -->
+            <img class="gif" src="https://media.tenor.com/fTTVgygGDh8AAAAi/bear-kiss-bear-kisses.gif" alt="Cute bear asking question">
+            <h1>Will you be my Valentine?</h1>
+            <div class="buttons">
+                <button id="yes-btn" class="btn yes-btn">Yes</button>
+                <button id="no-btn" class="btn no-btn">No</button>
+            </div>
+            <p id="no-hover-msg" class="hover-msg"></p>
+        </div>
+
+        <!-- State 2: The Success Message (Hidden by default) -->
+        <div id="success-container" class="hidden">
+            <img class="gif" src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" alt="Cute bear celebrating">
+            <h1>Yay! I knew you would say yes! ❤️</h1>
+            
+            <!-- Love Letter Feature -->
+            <button id="letter-btn" class="btn letter-btn">💌 Click for a message</button>
+            <div id="love-letter" class="love-letter">
+                <p>to the person who shines my life every day. I don’t say it enough, but I am so incredibly grateful for existing in my life. You’re my favorite person, my best friend, and my home. I love you more than words can really put together.forever only yours💖</p>
+            </div>
+        </div>
+
+        <!-- Credits -->
+        <div class="footer">Made with ❤️ by nidal</div>
+    </div>
+
+    <!-- Import canvas-confetti library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <audio id="no-sound" src="https://www.myinstants.com/media/sounds/vine-boom.mp3"></audio>
+    
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container">
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+    </div>
+
+    <!-- Floating Flowers Background -->
+    <div class="flowers-container">
+        <div class="flower"></div>
+        <div class="flower"></div>
+        <div class="flower"></div>
+        <div class="flower"></div>
+        <div class="flower"></div>
+        <div class="flower"></div>
+    </div>
+
+    <script src="js.JS"></script>
+</body>
+</html>
